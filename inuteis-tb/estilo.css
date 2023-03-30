@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +14,17 @@
 
 body {
     background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background-size: 500% auto;
+    animation: fundo-animado 10s infinite alternate;
+}
+
+@keyframes fundo-animado {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .cabecalho {
@@ -33,5 +45,44 @@ body {
 }
 
 .menu {
+    list-style: none;
+    gap: 64px;
+    font-size: 24px;
+}
 
+.d-flex {
+    display: flex;
+}
+
+.botao-menu {
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 16px;
+    color: #000000;
+    padding: 12px 24px;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+.botao-menu:hover {
+    color: #fff;
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+}
+
+.hero {
+    height: calc(100vh - 90px);
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div {
+    flex: 1;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+}
+
+.centralizar {
+    text-align: center;
 }
