@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,17 @@
 
 body {
     background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background-size: 500% auto;
+    animation: fundo-animado 10s infinite alternate;
+}
+
+@keyframes fundo-animado{
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .container {
@@ -25,11 +37,50 @@ body {
 
 .logo {
     color: var(--color-primary);
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .menu {
-    background-color: aqua;
     display: flex;
+    gap: 32px;
+    font-size: 24px;
+    list-style: none;
+}
+
+.botao-menu {
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    padding: 12px 24px;
+    border-radius: 16px;
+    transition: 300ms;
+}
+
+.botao-menu:hover {
+    color: #fff;
+    background: linear-gradient(
+        to right, 
+        var(--color-primary), 
+        var(--color-secondary)
+    );
+}
+
+.hero {
+    display: flex;
+    height: calc(100vh - 90px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.slogan {
+    font-size: 58px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
 }
