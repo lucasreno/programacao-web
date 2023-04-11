@@ -58,6 +58,15 @@ body {
     transition: 300ms;
 }
 
+.active {
+    color: #fff;
+    background: linear-gradient(
+        to right, 
+        var(--color-primary), 
+        var(--color-secondary)
+    );
+}
+
 .botao-menu:hover {
     color: #fff;
     background: linear-gradient(
@@ -77,6 +86,11 @@ body {
 
 .hero div {
     flex: 1;
+}
+
+.hero img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .slogan {
