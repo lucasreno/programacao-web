@@ -193,9 +193,26 @@ textarea {
 
 .redes-sociais {
     display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 16px;
 }
 
-.redes-sociais svg{
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.telefone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.redes-sociais svg, .telefone svg{
     width: 60px;
     height: 60px;
     fill: #fff;
