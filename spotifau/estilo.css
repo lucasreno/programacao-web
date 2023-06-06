@@ -1,0 +1,12 @@
+.topo {
+    min-height: 80px;
+}
+
+.hero {
+    min-height: 400px;
+}
+
+.item {
+    border: 5px solid black;
+    min-height: 200px;
+}
